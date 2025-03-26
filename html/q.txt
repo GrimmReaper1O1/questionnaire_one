@@ -1,0 +1,468 @@
+<?php
+	$currentPath = rtrim(__DIR__, DIRECTORY_SEPARATOR); include "includes/header3.php";
+		if (isset($_SESSION['id'])) {
+	
+	if (isset($_GET['g'])) {
+		$_SESSION['godly'] = 1;
+	}
+
+	if (isset($_GET['reset'])) {	
+		unset($_SESSION['allQuestions']);//
+		unset($_SESSION['questionDesc']);//
+		unset($_SESSION['sortedIds']);//
+		unset($_SESSION['countedNumberOfQuestionsPerQuestion']);//
+		unset($_SESSION['pageQuestionIds']);//
+		unset($_SESSION['godly']);//
+		unset($_SESSION['info']);//
+		unset($_SESSION['numeral']);//
+		unset($_SESSION['runs']);//
+		unset($_SESSION['numberOfQuestionsOnPage']);
+		unset($_SESSION['setFirst']);//
+		unset($_SESSION['questionLimitNumber']);//
+		unset($_SESSION['qr']);
+		unset($_SESSION['pagesIds']);
+		unset($_SESSION['loopNumber']);//
+		unset($_SESSION['page']);
+		unset($_SESSION['countOfPageQuestions']);//
+		unset($_SESSION['choiceArray']);
+		unset($_SESSION['numeralOfRem']);
+	if (!isset($_SESSION['countOfPageQuestions'])) {
+		$questionPossition = $cms->getQuestions()->selectSubjectViaTableIdAndClassId();
+	
+		$_SESSION['numberOfQuestionsOnPage'] = $questionPossition['number_of_questions'];
+		$numberOfQuestionsOnPage = $questionPossition['number_of_questions'];
+		$_SESSION['numeralOfRem'] = $questionPossition['number_of_removal'];
+		$numeralOfRem = $questionPossition['number_of_removal'];
+	} else {
+		$numeralOfRem = $_SESSION['number_of_removal'];
+		$numberOfQuestionsOnPage = $_SESSION['numberOfQuestionsOnPage'];
+	}
+	
+
+}
+
+	if (isset($_GET['unset'])) {	
+	
+unset($_SESSION['countedNumberOfQuestionsPerQuestion']);
+unset($_SESSION['sortedIds']);
+unset($_SESSION['loopNumber']);
+unset($_SESSION['questionDesc']);
+
+//unset($_SESSION['countOfPageQuestions']);
+	}
+	if (isset($_GET['newpg'])) {	
+			unset($_SESSION['godly']);
+		unset($_SESSION['countedNumberOfQuestionsPerQuestion']);
+		unset($_SESSION['pageQuestionIds']);
+		unset($_SESSION['sortedIds']);
+		unset($_SESSION['questionLimitNumber']);
+		unset($_SESSION['qr']);
+		unset($_SESSION['info']);
+		unset($_SESSION['runs']);
+		unset($_SESSION['loopNumber']);
+		unset($_SESSION['countOfPageQuestions']);//
+		unset($_SESSION['numeral']);
+		unset($_SESSION['setFirst']);
+		unset($_SESSION['page']);
+		unset($_SESSION['questionDesc']);
+		
+		
+			}
+	
+		$page = $_GET['page'] ?? 1;
+		if (!isset($_SESSION['page'])) {
+			$_SESSION['page'] = $page;
+
+		} else {
+			$page = $_SESSION['page'];
+			
+		}
+	
+	
+		$start = microtime(true);
+	
+
+
+	?>
+<script>var pg = <?= $_SESSION['page'] ?>;</script>
+	<?php
+	
+
+
+		if (isset($_GET['reset']) || isset($_GET['page']) || isset($_GET['refresh'])) {
+		if (!isset($_SESSSION['godly'])) {
+		
+		if (!isset($numeralOfRem)) {
+		$numeralOfRem = $_SESSION['numeralOfRem'];
+		$numberOfQuestionsOnPage = $_SESSION['numberOfQuestionsOnPage'];
+
+	}
+if (!isset($_SESSION['countedNumberOfQuestionsPerQuestion'])) { 
+	
+	// get count
+	if (!isset($_SESSION['countedIds'])) {
+	$_SESSION['countedIds'] = $cms->getQuestions()->countQuestionIds();
+	$_SESSION['totalPages'] = ceil($_SESSION['countedIds']['count'] / $numberOfQuestionsOnPage);
+	} else {
+		$countedIds = $_SESSION['countedIds'];
+	}
+	if (isset($_GET['newpg']) || isset($_GET['reset'])) {
+		$questionIds = $cms->getQuestions()->selectQuestionIdsPagination($page, $numberOfQuestionsOnPage);
+	$_SESSION['sourcedQuestions'] = count($questionIds[1]);
+	}
+	if (isset($questionIds)) {
+		$pageQuestionIds = $cms->getQuestions()->selectQuestionInformationIdFromQuestionIds($questionIds[1]);
+		$_SESSION['countOfPageQuestions'] = count($pageQuestionIds);
+	
+	}
+
+ if(!isset($_SESSION['sortedIds'])) {
+
+$sortedIds = $cms->getQuestions()->sortArrayViaQuestionIdsArray($questionIds[1], $pageQuestionIds);
+
+$_SESSION['sortedIds'] = $sortedIds;
+$pagesIds = $sortedIds;
+
+} 	else {
+	$pagesIds = $_SESSION['sortedIds'];
+}
+
+if ($_SESSION['sortedIds']['a' . 0] != 'empty') {
+		
+
+
+
+		
+	
+	
+		
+		$counted = count($pagesIds);	
+		
+
+	for ($i = 0 ; $i < $counted ; $i++ ) {
+	$countedNumberOfQuestionsPerQuestion['a' . $i] = count($pagesIds['a' . $i]);
+
+	}
+	
+	
+	$_SESSION['countedNumberOfQuestionsPerQuestion'] = $countedNumberOfQuestionsPerQuestion;
+	$countedNumberOfQuestionsPerQuestion = $_SESSION['countedNumberOfQuestionsPerQuestion'];
+	$pagesIds = $_SESSION['sortedIds'];
+}
+	} else { 
+	$countedNumberOfQuestionsPerQuestion = $_SESSION['countedNumberOfQuestionsPerQuestion'];
+	$pagesIds = $_SESSION['sortedIds'];
+	} 
+
+
+
+	if ($_SESSION['sortedIds']['a' . 0] != 'empty') {
+
+
+			if (!isset($_SESSION['loopNumber'])) {
+				$loopNumber = count($pagesIds);
+				$_SESSION['loopNumber'] = $loopNumber;
+
+		}	else {
+			$loopNumber = $_SESSION['loopNumber']; }
+		}
+	}
+		$totalPages = $_SESSION['totalPages'];
+
+
+	if ($_SESSION['sortedIds']['a' . 0] != 'empty') {
+	if (isset($_GET['i'])) {
+		$_SESSION['godly'] = 'on';
+	}
+
+$info = $cms->getQuestions()->selectQuestionAllAtOnce($pagesIds, $countedNumberOfQuestionsPerQuestion);
+$runs = $_SESSION['runs'];
+$sourcedQuestions = $_SESSION['sourcedQuestions'];
+$info['numberOfRem'] = $_SESSION['numeralOfRem'];
+	}}
+	print_r($_POST);
+if ($_SERVER['REQUEST_METHOD'] === 'POST' && !isset($_GET['refresh']) && !isset($_GET['reset'])) {
+print_r($_POST);
+
+?>
+
+
+
+<?php 
+} else {
+?>
+<script>
+var posted;
+</script>
+<?php
+}
+if (isset($_GET['buffer'])) {
+?>
+<form action="questionnaire.php" method="POST">
+	<?php 
+	for ($i = 0 ; $i < count($_SESSION['countedNumberOfQuestionsPerQuestion']) ; $i++ ) {
+
+		?>
+
+
+<div style="background-color: white; width: 80%; border-radius: 75px; border: 5px solid black; padding: 50px; margin: auto auto;" class="qA" id="<?= $i ?>">
+	<h4 id="a<?= $i ?>"></h4>
+	
+
+<br><br></div>
+
+<?php
+	} ?>
+	<input style="display: block; margin-left: auto; margin-right: auto;" type="submit" value="SUBMIT!">
+	</form>
+	<?php
+}
+
+if ($_SERVER['REQUEST_METHOD'] === 'POST' && !isset($_GET['refresh']) && !isset($_GET['reset'])) {
+	if (isset($_SESSION['godly'])) { ?>
+	
+		<form action="questionnaire.php?refresh=yes&i=yes" method="POST">
+
+	<?php } else { ?>
+	
+		<form action="questionnaire.php?refresh=yes" method="POST">
+
+
+	<?php } ?>
+
+		<h4 class="reply" id="reply">some shit</h4>
+		<input style="display: block; margin-left: auto; margin-right: auto;" type="submit" value="NEXT QUESTION SET!"></form>
+	
+	</form>
+	
+	
+	<?php
+	
+	?>
+	
+	
+	
+
+
+<?php
+}
+
+if (!isset($_GET['reset']) && !isset($_GET['refresh'])) {
+	?>
+	<script type="module">
+import {runTwo, saveToIndexedDB,} from './src/loadMod.js';
+// type module will not run until loaded
+var databaseName = "Questionnaire";
+var key = "questionnaireSubject<?= $_SESSION['subject'] ?>Class<?= $_SESSION['site']['cId'] ?>Page<?= $_SESSION['page'] ?>"
+var storeName = "questioninformation";
+
+var posted = <?= json_encode($_POST) ?>;
+let runOrNot = 0;
+let place = sessionStorage.getItem('status')
+let arry = JSON.parse(place);
+console.log(posted)
+arry = runTwo(arry, posted);
+console.log(arry);
+saveToIndexedDB(storeName, {id: JSON.stringify(arry)}, key, databaseName);
+
+console.log(arry);
+
+</script>
+<?php
+
+}
+
+
+
+
+
+
+if (isset($info)) {
+	?>
+
+
+
+
+
+
+	
+
+// //console.log(arr);
+
+
+
+// //console.log(arr);
+
+
+  
+
+
+<script type="module">
+import {saveToIndexedDB, loadFromIndexedDB, openDB} from './src/loadMod.js';
+var arry = {
+		<?php
+for ($i = 0 ; $i < $sourcedQuestions ; $i++) { ?> 
+	 a<?= $i ?>: {
+		0: {}, numeralPos: '<?= $i ?>',
+	 }, 
+	 
+<?php }
+ 
+
+
+?> numeral: {},
+length: <?php echo ($sourcedQuestions); ?>
+};  
+	var arr = <?= json_encode($info) ?>;
+var databaseName = "Questionnaire";
+var key = "questionnaireSubject<?= $_SESSION['subject'] ?>Class<?= $_SESSION['site']['cId'] ?>Page<?= $_SESSION['page'] ?>"
+var storeName = "questioninformation";
+
+console.log(arr);
+openDB(storeName, databaseName);
+
+<?php if (isset($_GET['reset']) || (isset($_GET['reset']) && isset($_GET['i'])) || isset($_GET['refresh'])) { ?>
+loadFromIndexedDB(storeName, key, databaseName).then(function (resolve) {
+ <?php if (!isset($_GET['reset']) || (isset($_GET['reset']) && isset($_GET['i']))) { ?>
+	arry = JSON.parse(resolve.id);
+
+console.log('here')  
+				 var numeral;
+	 
+				 if (arr.hasOwnProperty('info')) {
+	 
+					 
+	 
+					 let counter = 0;
+					 for (var i = 0 ; i < arry.length; i++ ) {
+					 
+				
+						 if (arr['runs'] < arr['maxNumeral'][i] + 1) {
+							 numeral = 'a' + i;
+							 arry['numeral'][i] = arr.numeral[i]
+							 arry[numeral][arr['runs']-1] = arr['info'][counter];
+							 
+							 counter++
+						 } else {
+							 counter++
+						 }
+					 }
+	 
+				 } 
+				
+	sessionStorage.setItem('status', JSON.stringify(arry));
+	sessionStorage.setItem('status2', JSON.stringify(arr));
+	 var object = arry;
+saveToIndexedDB(storeName, {id: JSON.stringify(object)}, key, databaseName);
+ window.location.replace('/questionnaire.php?buffer=yes');
+ <?php } ?>
+
+
+}).catch(function (error) {
+  
+	console.log(arr);
+	console.log(arry);
+	
+ 
+  <?php if (isset($_GET['reset'])) { ?>
+
+ 
+                 
+              
+              
+  
+				 var numeral;
+	 
+				 if (arr.hasOwnProperty('info')) {
+	 
+					 
+	 
+					 // //console.log(arr['runs']-1);
+	 
+				 //console.log(arr.length);
+					 let counter = 0;
+					 for (let i = 0 ; i < arry.length; i++ ) {
+					 
+				
+						 if (arr['runs'] < arr['maxNumeral'][i] + 1) {
+							 numeral = 'a' + i;
+							 arry['numeral'][i] = arr.numeral[i]
+							 
+							 arry[numeral][arr['runs']-1] = arr['info'][counter];
+							 
+							 counter++
+						 } else {
+							 counter++
+						 }
+					 }
+	 
+				 } 
+				
+	 sessionStorage.setItem('status', JSON.stringify(arry));
+	 
+	 sessionStorage.setItem('status2', JSON.stringify(arr));
+	 var object = arry;
+saveToIndexedDB(storeName, {id: JSON.stringify(object)}, key, databaseName);
+window.location.replace('/questionnaire.php?buffer=yes');
+
+console.log("it got here");
+
+
+
+<?php } ?>
+
+}); </script>
+
+
+
+
+
+
+
+
+
+<br><br> <br><br><br><?php
+					?> <br><br>
+				<?php
+				if (isset($_GET['reset']) || isset($_GET['refresh'])) { ?>
+				<div sytle="width: 80%; margin: auto auto;">
+				<form action="questionnaire.php?reset=yes&page=<?= $_SESSION['page'] ?>" method="POST">
+					<input type="submit" value="RESET PAGE!">
+				</from> 
+				</div>
+				<?php
+			for($i = 1; $i <= $totalPages; $i++){
+			?>
+			<a href="questionnaire.php?reset=yes&page=<?= $i ?>"><?= $i ?>-</a>
+			
+			<?php
+			} 
+				}
+		
+}
+
+echo "I'm Alive!";
+		$end = microtime(true);
+		echo ($end - $start);
+	
+		}
+		
+		if (isset($_GET['buffer'])) {
+?>
+<script type="module">
+import {runOne, saveToIndexedDB, loadFromIndexedDB, openDB} from './src/loadMod.js';
+
+
+var arry = sessionStorage.getItem('status');
+var arr = sessionStorage.getItem('status2');
+
+arry = runOne(JSON.parse(arr), JSON.parse(arry));
+
+
+</script>
+	<?php
+}
+	}
+	?>
+	</div>
+</body>
