@@ -1,0 +1,857 @@
+
+a:hover {
+	color: white;
+}
+a:active {
+	color: white ;
+}
+a:visited {
+	color: white ;
+}
+a {
+	color: white ;
+}
+html, body {
+    min-height: 100%;
+	;
+	height: 100%; 
+	scrollbar-width: none;  /* Firefox */
+}
+	#docu::-webkit-scrollbar {
+		display: none;
+		-ms-overflow-style: none;  /* IE and Edge */
+	}
+	#docu::-webkit-scrollbar {
+		display: none;
+	-ms-overflow-style: none;  /* IE and Edge */
+	
+}
+#docu {
+scrollbar-width: none;  /* Firefox */
+}
+body {
+	display: none;
+	color: white;
+	background-color: blue;
+	height: auto;
+	margin: 0px;
+	color: white;
+	/* overflow-y: scroll; */
+
+}
+#mainTitleBar {
+	width: 100%;
+	color: white;
+	height: 60px;
+	z-index: 10;
+	top: 0;
+	left: 0;
+	position: fixed;
+	display: block;
+}
+#leftInnerTitleBar {
+	float: left;
+	display: inline-block;
+	background-color: blue;
+	width: 7%;
+	height: 58px;
+	position: relative;
+}
+
+#middleTitleBar {
+	float: left;
+	display: inline-block;
+	text-align: center;
+	width: 86%;
+	height: 58px;
+	background-color: blue;
+	border-bottom: 3px solid black;
+	color: white;
+	position:relative;
+}
+#rightTitleBar {
+	width: 7%;
+	float: left;
+	display: inline-block;
+	position: relative;
+	background-color: blue;
+	height: 58px;
+	position: relative;
+}
+
+
+#pagination {
+	position: fixed;
+	z-index: 7;
+	bottom: 0;
+	left: 0;
+	height: auto;
+	width: 100%;
+	text-align: center;
+	margin: 0 auto;
+	background-color: blue;
+	font-size: 30px;
+}
+
+a:active {
+	color: white;
+}
+a:hover {
+	color: white;
+}
+a:visited {
+	color: white;
+}
+a {
+	color: white;
+}
+#questions {
+	overflow-y: auto;
+}
+#reply {
+	overflow-y: auto;
+}
+
+
+#quesitonnaire {
+	margin: 0 auto; border: none; text-align: center;
+}
+
+
+
+.width20 {
+	width: 20%;
+}
+
+
+
+
+#subjectVideo {
+	width: 70%;
+	margin: 0 auto;
+}
+.centeredText {
+	text-align: center;
+}
+
+
+#rightSideInner {
+
+	height: 100%;
+}
+
+
+.white {
+	color: white;
+}
+
+div.settings10 {
+	min-width: 200px;
+	width: 20%;
+	display: inline-flex;
+	flex-flow: column wrap;
+	justify-content: flex-start;
+	flex-wrap: wrap;
+
+}
+.margin40 {
+	margin: 0 auto;
+	width: 40%;
+}
+.fieldset3 {
+	width: 40%;
+	margin: 0 auto;
+	border: none;
+}
+.fieldset01 {
+	border: 0px solid;
+	width: 80%;
+	margin: 0 auto;
+
+}
+
+
+
+
+.headings {
+	text-align: center;
+}
+.letters {
+	text-align: center;
+}
+
+
+#mainBody {
+	width: 100%;
+	height: 100%;
+	/* overflow-y: scroll; */
+	flex-grow: 1;
+}
+
+.margin80 {
+	width: 80%;
+	margin: 0 auto;
+}
+
+.right-align{
+	text-align: right;
+}
+
+
+
+
+.fieldset1 {
+	padding-left: 35%;
+	padding-right: 35%;
+	border: none;
+}
+.fieldset2 {
+	width: 50%;
+	margin: 0 auto;
+	border: none;
+}
+
+.width80 {
+	width: 80%;
+	margin: 0 auto;
+}
+.width70 {
+	width: 70%;
+	margin: 0 auto;
+}
+
+.fieldset100 {
+	width: 100%;
+	border: none;
+}
+.input-right {
+	padding-right: 0px;
+}
+
+.fieldSet4 {
+	width: 60%;
+	margin: 0 auto;
+}
+
+.margin30 {
+	margin: 0 auto;
+	width: 30;
+}
+.width15inline {
+	width: 15%;
+	display: inline;
+}
+.width85inline {
+	width: 85%;
+	display: inline;
+}
+.width50inline {
+	width: 60%;
+	display: none;
+	float: left;
+}
+.width70inline {
+	width: 80%;
+	display: none;
+	float: left;
+}
+.width30inline {
+	width: 40%;
+	display: none;
+	float: left;
+
+}
+.width10inline {
+	width: 20%;
+	display: none;
+	float: left;
+
+}
+.number {
+	width: 33%;
+	display: inline-block;
+}
+.width50 {
+	width: 50%;
+	margin: 0 auto;
+}
+.inlineBlock {
+	display: inline-block;
+}
+.width30 {
+	width: 30%;
+}
+
+.video {
+	background-color: rgb(20,20,20); 
+	width: 81%; 
+	margin: 0 auto;
+}
+.flex {
+	display: inline-flex; flex-flow: column wrap; justify-content: flex-start; flex-wrap: wrap;
+}
+
+.mainflex {
+	display: flex;
+	height: auto;
+}
+
+#innerFlex {
+	display: inline-flex;
+	justify-content: flex-start;
+	height: 100%;
+}
+.apendixTwo {
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+}
+
+.fieldset1 {
+	padding-left: 35%;
+	padding-right: 35%;
+	border: 0px solid;
+}
+.fieldset01 {
+	border: 0px solid;
+	width: 80%;
+	margin: 0 auto;
+}
+.fieldset2 {
+	width: 50%;
+	margin: 0 auto;
+	border: none
+}
+.margin70 {
+	width: 70%;
+	margin: 0 auto;
+}
+.margin60 {
+	width: 60%;
+	margin: 0 auto;
+}
+
+.margin55 {
+	width: 55%;
+	margin: 0 auto;
+}
+.margin50 {
+	width: 50%;
+	margin: 0 auto;
+}
+
+.margin90 {
+	margin: 0 auto;
+	width: 80%;
+}
+.fieldSet4 {
+	width: 100%;
+	border: none;
+}
+.input-right {
+	display: inline-block;
+	text-align: right;
+	width: 50%;
+}
+.label-left {
+	display: inline-block;
+	text-align: left;
+	width: 50%;
+}
+
+div.settings {
+	width: 40%;
+	display: inline-flex;
+	flex-flow: column wrap;
+	justify-content: flex-start;
+	flex-wrap: wrap;
+	padding-bottom: 5px;
+}
+div.settings0 {
+	width: 59%;
+	display: inline-flex;
+	flex-flow: column wrap;
+	justify-content: flex-start;
+	flex-wrap: wrap;
+	padding-bottom: 5px;
+}
+div.settings50 {
+	width: 45%;
+	display: inline-flex;
+	flex-flow: column wrap;
+	justify-content: flex-start;
+	flex-wrap: wrap;
+	padding-bottom: 5px;
+}
+div.settings10 {
+	width: 20%;
+	display: inline-flex;
+	flex-flow: column wrap;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+div.settings1 {
+	width: 6%;
+	display: inline-flex;
+	flex-flow: column wrap;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	margin: 2;
+}
+div.settings2 {
+	width: 89%;
+	display: inline-flex;
+	flex-flow: column wrap;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	margin: 2;
+}
+div.settings3 {
+	width: 10%;
+	display: inline-flex;
+	flex-flow: column wrap;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	margin: 2;
+}
+
+div.settings4 {
+	width: 80%;
+	display: inline-flex;
+	flex-flow: column wrap;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	margin: 2;
+}
+div.settings5 {
+	width: 30%;
+	display: inline-flex;
+	flex-flow: column wrap;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	margin: 2;
+}
+div.settings6 {
+	width: 65%;
+	display: inline-flex;
+	flex-flow: column wrap;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	margin: 2;
+}
+.margin28 {
+	width: 28;
+	margin: 0 auto;
+}
+.margin20 {
+	width: 20%;
+	margin: 0 auto;
+}
+.noBorder {
+	border: none;
+}
+.width100 {
+	width: 100%
+
+}
+.heightAuto {
+	height: auto;
+}
+.margin20 {
+	margin: 0 auto;
+	width: 20%;
+}
+
+.paddingTop5 {
+	padding-top: 5px;
+}
+
+
+
+
+
+#divSmallField {
+	width: 100%
+}
+
+/* fix when I know more not centered */
+.fieldset1 {
+	padding-left: 35%;
+	padding-right: 35%;
+	border: 0px solid;
+}
+.right-text-align {
+	text-align: right;
+}
+
+
+
+div.settings5 {
+	width: 30%;
+	display: inline-flex;
+	flex-flow: column wrap;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	margin: 2;
+	padding-bottom: 5px;
+}
+div.settings6 {
+	width: 65%;
+	display: inline-flex;
+	flex-flow: column wrap;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	margin: 2;
+	padding-bottom: 5px;
+}
+
+.margin25 {
+	width: 25%;
+	margin: 0 auto;
+}
+.submit-middle {
+	margin: 0 auto;
+	width: 75px;
+}
+
+
+
+
+.headings {
+
+	text-align: center;
+}
+
+
+
+.marginAuto {
+	margin: 0 auto;
+}
+div.settings10 {
+	width: 20%;
+	display: inline-flex;
+	flex-flow: wrap;
+	justify-content: center;
+	flex-wrap: wrap;
+}
+
+
+
+
+
+.copyright {
+	z-index: 8;
+	position: fixed;
+	bottom: 0;
+	right: 0;
+	text-align: right;
+	width: 12%;
+	margin: 0 auto;
+	text-align: right;
+}
+
+
+
+
+
+
+
+#quesitonnaire {
+	margin: 0 auto; border: none; text-align: center;
+}
+
+
+
+
+
+
+
+
+
+.apendix {
+	position:relative;
+	display: inline-block;
+	width: 80%;
+}
+.white {
+	color: black;
+}
+
+div.settings10 {
+	min-width: 200px;
+	width: 20%;
+	display: inline-flex;
+	flex-flow: column wrap;
+	justify-content: flex-start;
+	flex-wrap: wrap;
+
+}
+
+
+.fieldset01 {
+	border: 0px solid;
+	width: 80%;
+	margin: 0 auto;
+
+}
+
+#docu {
+	/* ; */
+	height: 100%; /* Ensures scrolling within this element if necessary */
+  }
+
+div.settings9 {
+	width: 80%;
+	display: inline-flex;
+	flex-flow: column wrap;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	padding-bottom: 5px;
+}
+#topBar {
+	position: fixed;
+	z-index: 11;
+	width: 150px;
+	top: 0;
+	right: 0;
+	padding-top: 5px;
+	padding-right: 10px;
+	height: 45px;
+}
+
+#topRight {
+	z-index: inherit;
+	width: 100%;
+	position: relative;
+	display: inline-block;
+	float: right;
+	
+	color: black !important;
+}
+#mainButtonDiv {
+	z-index: inherit;
+	width: 100%;
+	display: flex;
+
+	/* color: black !important; */
+}
+#innerButtonDiv {
+	display: flex;
+
+	width: 100%;
+	/* color: black !important; */
+}
+#mainMenuButton {
+	z-index: inherit;
+	display: inline-block;
+	border: none;
+	float: right;
+
+	background-color: inherit;
+
+}
+#mainMenuImage {
+	z-index: inherit;
+	width: 40px;
+	height: 40px;
+}
+
+#mainMenuDiv {
+	padding-left: 10px;
+	padding-right: 10px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	display: none;
+	
+	background-color: white;
+	border: 2px solid black;
+	color: black inherit;
+}
+#adminMenuDiv {
+	display: none;
+	
+	color: black inherit;
+}
+#adminClassesDiv {
+	display: none;
+	
+	color: black inherit;
+}
+#adminPageDiv {
+	display: none;
+	
+	color: black inherit;
+}
+#administerAdminsDiv {
+	display: none;
+	
+	color: black inherit;
+}
+.hightAuto {
+	height: auto;
+	width: auto;
+}
+.visible {
+	display: block !important;
+}
+.content {
+
+	height: auto;
+	padding: 0px 0px;
+	
+}
+
+.full-height {
+	height: 100%;
+	width: 100%;
+	/* display: flex; */
+	;
+	/*  */
+	z-index: 0;
+}
+#main {
+	margin: 0 auto;
+	width: 86%;
+	flex-grow: 1;
+
+
+}
+.leftLowerSidebar {
+	width: 7%;
+	background-color: black;
+	;
+	position: fixed;
+	left: 0;
+	top: 0;
+	z-index: 9;
+	height: 100%;
+
+}
+
+.rightLowerSidebar {
+	width: 7%;
+	background-color: black;
+	;
+	position: fixed;
+	right: 0;
+	top: 0;
+	z-index: 9;
+	height: 100%;
+}
+.heightHeader {
+	height: 60px;
+	width: 100%;
+
+}
+.addHeight {
+	height: 1200px;
+}
+#signout {
+	display: flex;
+	padding-top: 17px;
+}
+.qanswer {
+	background-color: white;
+	color: black ;
+	width: 80%;
+	border: 2px solid black;
+	border-radius: 75px;
+	padding: 50px;
+	margin: 0 auto;
+	line-height: 20px;
+}
+#selectSubject {
+	width: 100%;
+}
+#content {
+	height: 100%;
+	width: 100%;
+	display: flex;
+	;
+}
+.leftSideInner {
+	width: 70%;
+	height: auto;
+	display: flex;
+	height: 100%;
+}
+
+.rightSideInner {
+	width: 30%;
+}
+#imageDiv {
+	width: 700px;
+	height: 90%;
+	position: fixed;
+	z-index: 14;
+	top: 0;
+	left: 0;
+	display: none;
+	background-color: grey;
+	border: 2px solid black;
+}
+#img {
+	height: 90%;
+	width: auto;
+	margin: 0 auto;
+	text-align: center;
+}
+#placement {
+	height: 100%;
+	width: auto;
+	margin: 0 auto;
+	display: inline-block;
+}
+#one {
+	text-align: left;
+	display: inline-block;
+	width: 20%;
+}
+#two {
+	width: 20%;
+	text-align: right;
+	display: inline-block;
+
+}
+#left {
+	display: inline-block;
+	margin-left: 40px;
+
+}
+#right {
+	display: inline-block;
+	float: right;
+	margin-right: 40px;
+
+}
+.floatLeft {
+	display: inline-block;
+	float: left;
+	height: auto;
+	height: 100%;
+}
+.alignLeft {
+	text-align: left !important;
+}
+
+.height100 {
+	height: 100%;
+}
+.floatRight {
+	display: inline-block;
+	float: right;
+	height: auto;
+
+}
+.inline {
+	display: inline-block;
+}
+#cDiv {
+	display: inline-block;
+	text-align: center;
+	width: 60%;
+}
+#buttons {
+	width: 100%;
+	position: relative;
+}

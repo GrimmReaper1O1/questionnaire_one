@@ -1,0 +1,154 @@
+
+
+        
+<div style="display: inline-flex; flex-flow: column wrap; justify-content: flex-start; flex-wrap: wrap; width: 700px; height: 400px">
+        <div style="width: 100%;">
+
+            <div style=" color: white; width: 100%; height: <?= $arry['siteSettings']['hobbip'] ?>px; background-color: <?=  $arry['siteSettings']['tc'] ?>;  border-bottom: 2px solid black; ">
+                <div style="float: left; display: inline-block; height: 100%; width: <?= $arry['siteSettings']['polsw'] ?>%; background-color: blue; border-bottom: 2px solid black;">
+
+                </div>
+            <div style="float: left; display: inline-block; width: <?= $arry['siteSettings']['pombw'] ?>%; height: 100%; text-align: center; background-color: <?= $arry['siteSettings']['tc'] ?>;">Quesitonnaire!
+
+            </div>
+            <div style="float: left; display: inline-block; width: <?= $arry['siteSettings']['porsw'] ?>%; background-color: <?= $arry['siteSettings']['mbc'] ?>; height: auto; border-bottom: 2px solid black;">
+            </div>
+        </div>
+        <div style="float: left; width: <?= $arry['siteSettings']['polsw'] ?>%; height: <?= $arry['remainingHeight'] ?>px; background-color: <?= $arry['siteSettings']['lBarc'] ?>;">
+        </div>
+        <div style=" display: inline-block; float: left; width: <?= $arry['siteSettings']['pombw'] ?>%; height: <?= $arry['remainingHeight'] ?>px; background-color: <?=  $arry['siteSettings']['mbc'] ?>;">
+           
+
+
+
+
+        <div style="width: 100%; height: auto">
+                <div style="position: relative; height: 85%; width: 100%; margin: 0 auto;">    
+                    <div style="text-align: center; height: auto;">
+                        <div style="margin: 0 auto; width: 80%;">
+<img style="width: auto; height: 20%;" src="../images/plants dancing.jpg" />
+<figcaption>info</figcaption>
+                        </div> 
+<h7> Here is your video or audio.</h7><br>
+                    </div>
+                    <div style="width: 86%; height: auto;">
+                        <div style="display: inline-flex; flex-flow: column wrap; justify-content: space-between; flex-wrap: wrap; width: 60%; height: 40%;">
+                            <div style="width: 100%;  height: auto; ">
+                                <div style="color: black !important;  width: 80%; height: 20% margin: 0 auto; border: 2px solid; border-radius: 10px; background-color: white;">
+                                <p>How would you like your website to look today?</p>
+                                </div>
+                            </div>
+        
+                        <div style="display: inline-flex; flex-flow: column wrap; justify-content: space-between; flex-wrap: wrap; width: 25%; height: 40%;">
+                            <div style="margin: 0 auto;">
+        <img style="width: 75%; height: 80%;" src="../images/plants dancing.jpg" /> <figcaption>info</figcaption>
+
+                            </div>                        
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>   
+
+
+
+
+
+        </div>
+    <div style="float: left; width: <?= $arry['siteSettings']['porsw'] ?>%; height: <?= $arry['remainingHeight'] ?>px; background-color: <?= $arry['siteSettings']['rSideColour']  ?>;">
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+<div style="float: left; width: 900px; height: 1600px;">
+
+<fieldset class="fieldset100">
+<form action="colourChangePage.php" method="POST">
+
+<div  ><div class="width30inline"><label for="sovip">Size of video in percent:</label>                          </div>  <div class="width70inline"><input type="checkbox" name="sovip" /> </div> </div>  
+<div  ><div class="width30inline"><label for="soibip">Size of informaiton box in percent:</label>               </div>  <div class="width70inline"><input type="checkbox" name="soibip" /> </div> </div>  
+<div  ><div style="padding-top: 18px;" class="width30inline"><label for="coib">Colour of information box:</label>                          </div> <div class="width70inline"><div class="width50"> <div class="number"><input class="width100" type="number" name="coibr"  /></div><div class="number"> &nbsp; <input class="width100" type="number"  name="coibg" /></div><div class="number">  &nbsp; <input  class="width100" type="number"  name="coibb" />   </div> <div class="width50">&nbsp; </div> </div> </div> </div>
+<div  ><div style="padding-top: 18px;" class="width30inline"><label for="cofiib">Colour of text in inforamtion box:</label>                </div> <div class="width70inline"><div class="width50"> <div class="number"><input class="width100" type="number" name="cofiibr"  /></div><div class="number"> &nbsp; <input class="width100" type="number"  name="cofiibg" /></div><div class="number">  &nbsp; <input  class="width100" type="number"  name="cofiibb" />   </div> <div class="width50">&nbsp; </div> </div> </div> </div>
+<div  ><div class="width30inline"><label for="solipip">Size of lefthand information panel in percent:</label>   </div>  <div class="width70inline"><input type="checkbox" name="solipip" /> </div> </div>  
+<div  ><div class="width30inline"><label for="soripip">Size of righthand information panel in percent:</label>  </div>  <div class="width70inline"><input type="checkbox" name="soripip" /> </div> </div>  
+<div  ><div class="width30inline"><label for="bposa">Backgroud Picture of subject area:</label>                 </div>  <div class="width70inline"><input type="file" name="bposa" />        </div></div> 
+<div><br><br><br><br><br><br><br><br><br><br><br><br><br></div>
+<div style="padding-left: 200px;"><input type="submit" name="submit2" value="SUBMIT!">
+</div>
+</fieldset>
+
+</div>
+</div>
+
+</div>
+
+
+
+
+
+
+<div style="display: block; width: 1600px; height: 820px;">
+
+        
+<div style="display: inline-flex; flex-flow: column wrap; justify-content: flex-start; flex-wrap: wrap; width: 700px; height: 400px">
+        <div style="width: 100%;">
+
+            <div style=" color: white; width: 100%; height: <?= $arry['siteSettings']['hobbip'] ?>px; background-color: <?=  $arry['siteSettings']['tc'] ?>;  border-bottom: 2px solid black; ">
+                <div style="float: left; display: inline-block; height: 100%; width: <?= $arry['siteSettings']['polsw'] ?>%; background-color: blue; border-bottom: 2px solid black;">
+
+                </div>
+            <div style="float: left; display: inline-block; width: <?= $arry['siteSettings']['pombw'] ?>%; height: 100%; text-align: center; background-color: <?= $arry['siteSettings']['tc'] ?>;">Quesitonnaire!
+
+            </div>
+            <div style="float: left; display: inline-block; width: <?= $arry['siteSettings']['porsw'] ?>%; background-color: <?= $arry['siteSettings']['mbc'] ?>; height: auto; border-bottom: 2px solid black;">
+            </div>
+        </div>
+        <div style="float: left; width: <?= $arry['siteSettings']['polsw'] ?>%; height: <?= $arry['remainingHeight'] ?>px; background-color: <?= $arry['siteSettings']['lBarc'] ?>;">
+        </div>
+        <div style=" display: inline-block; float: left; width: <?= $arry['siteSettings']['pombw'] ?>%; height: <?= $arry['remainingHeight'] ?>px; background-color: <?=  $arry['siteSettings']['mbc'] ?>;">
+            <div style="color: black !important;  padding: 15px; width: 80%; border: 2px solid; border-radius: 9px; background-color: white; margin: 0 auto;">
+            Would you like to change the colour of this website?
+            <br>
+            <br>
+            <br>
+            <br>
+
+            </div>
+            <br>
+         
+            <div style="width: 10%; margin: 0 auto;">
+            <input type="submit" value="Submit!" />
+            </div>
+        </div>
+    <div style="float: left; width: <?= $arry['siteSettings']['porsw'] ?>%; height: <?= $arry['remainingHeight'] ?>px; background-color: <?= $arry['siteSettings']['rSideColour']  ?>;">
+    </div>
+</div>
+
+<div style="float: left; width: 900px; height: 700px;">
+<fieldset class="fieldset100">
+<form action="colourChangePage.php" method="POST">
+
+<div  ><div style="padding-top: 18px;" class="width30inline"><label for="coqaab">Colour of question and answer boxes:</label>              </div> <div class="width70inline"><div class="width50"> <div class="number"><input class="width100" type="number" name="coqaabr"  /></div><div class="number"> &nbsp; <input class="width100" type="number"  name="coqaabg" /></div><div class="number">  &nbsp; <input  class="width100" type="number"  name="coqaabb" />   </div> <div class="width50">&nbsp; </div> </div> </div> </div>
+<div  ><div style="padding-top: 18px;" class="width30inline"><label for="cotiqaab">Colour of text in question and answer boxes:</label>    </div> <div class="width70inline"><div class="width50"> <div class="number"><input class="width100" type="number" name="cotiqaabr"  /></div><div class="number"> &nbsp; <input class="width100" type="number"  name="cotiqaabg" /></div><div class="number">  &nbsp; <input  class="width100" type="number"  name="cotiqaabb" />   </div> <div class="width50">&nbsp; </div> </div> </div> </div>
+<div  ><div class="width30inline"><label for="bpota">Background picture of test area:</label>                   </div>  <div class="width70inline"><input type="file" name="bpota" />        </div></div> 
+<div><br><br><br><br><br><br><br><br><br></div>
+<div style="padding-left: 200px;"><input type="submit" name="submit3" value="SUBMIT!">
+</div>
+</fieldset>     
+</div>
+</div>
+
+</div>
+</div>
+</div>
+</body>
+</html>
+<?php

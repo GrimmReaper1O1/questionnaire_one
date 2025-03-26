@@ -1,0 +1,590 @@
+#mainTitleBar {
+	width: 100%;
+}
+#leftInnerTitleBar {
+	float: left;
+	display: inline-block;
+}
+
+#middleTitleBar {
+	float: left;
+	display: inline-block;
+	text-align: center;
+}
+#rightTitleBar {
+	float: left;
+	display: inline-block;
+	position: relative;
+}
+#leftLowerSidebar {
+
+}
+#rightLowerSidebar {
+
+
+}
+
+
+#pagination {
+	position: fixed;
+	z-index: 7;
+	bottom: 0;
+	width: 100%;
+	text-align: center;
+	margin: 0 auto;
+
+}
+
+#main {
+
+
+}
+
+
+
+
+
+#quesitonnaire {
+	margin: 0 auto; border: none; text-align: center;
+}
+
+
+.marginAuto {
+	margin: 0 auto;
+}
+.width20 {
+	width: 20%;
+}
+
+
+
+
+#subjectVideo {
+	width: 70%;
+	margin: 0 auto;
+}
+.centeredText {
+	text-align: center;
+}
+#leftSideInner {
+
+	height: 100%;
+}
+
+#rightSideInner {
+
+	height: 100%;
+}
+.textBoxes {
+	padding: 40px;
+	background-color: white;
+	color: black;
+	border: solid 2px;
+	border-radius: 75px;
+}
+
+.white {
+	color: black;
+}
+
+div.settings10 {
+	min-width: 200px;
+	width: 20%;
+	display: inline-flex;
+	flex-flow: column wrap;
+	justify-content: flex-start;
+	flex-wrap: wrap;
+
+}
+.margin40 {
+	margin: 0 auto;
+	width: 40%;
+}
+.fieldset3 {
+	width: 40%;
+	margin: 0 auto;
+	border: none;
+}
+.fieldset01 {
+	border: 0px solid;
+	width: 80%;
+	margin: 0 auto;
+
+}
+
+.submit-middle {
+	margin: 0 auto;
+	width: 75px;
+}
+
+
+
+
+.headings {
+	text-align: center;
+}
+.letters {
+	text-align: center;
+}
+
+
+#mainBody {
+	width: 100%;
+
+}
+
+.margin80 {
+	width: 80%;
+	margin: 0 auto;
+}
+
+.right-align {
+	text-align: right;
+}
+
+.marginAuto {
+	margin: 0 auto;
+}
+
+
+.fieldset1 {
+	padding-left: 35%;
+	padding-right: 35%;
+	border: none;
+}
+.fieldset2 {
+	width: 50%;
+	margin: 0 auto;
+	border: none;
+}
+
+.width80 {
+	width: 80%;
+	margin: 0 auto;
+}
+.width70 {
+	width: 70%;
+	margin: 0 auto;
+}
+
+.fieldset100 {
+	width: 100%;
+	border: none;
+}
+.input-right {
+	padding-right: 0px;
+}
+
+.fieldSet4 {
+	width: 60%;
+	margin: 0 auto;
+}
+
+.margin30 {
+	margin: 0 auto;
+	width: 30;
+}
+.width15inline {
+	width: 15%;
+	display: inline;
+}
+.width85inline {
+	width: 85%;
+	display: inline;
+}
+.width50inline {
+	width: 60%;
+	display: none;
+	float: left;
+}
+.width70inline {
+	width: 80%;
+	display: none;
+	float: left;
+}
+.width30inline {
+	width: 40%;
+	display: none;
+	float: left;
+
+}
+.width10inline {
+	width: 20%;
+	display: none;
+	float: left;
+
+}
+.number {
+	width: 33%;
+	display: inline-block;
+}
+.width50 {
+	width: 50%;
+}
+.width30 {
+	width: 30%;
+}
+.submit-middle {
+	width: 20%;
+	margin: 0 auto;
+}
+
+.flex {
+	display: inline-flex; flex-flow: column wrap; justify-content: flex-start; flex-wrap: wrap;
+}
+
+
+.marginAuto {
+	margin: 0 auto;
+}
+
+
+.fieldset1 {
+	padding-left: 35%;
+	padding-right: 35%;
+	border: 0px solid;
+}
+.fieldset01 {
+	border: 0px solid;
+	width: 80%;
+	margin: 0 auto;
+}
+.fieldset2 {
+	width: 50%;
+	margin: 0 auto;
+	border: none
+}
+.margin70 {
+	width: 70%;
+	margin: 0 auto;
+}
+.margin60 {
+	width: 60%;
+	margin: 0 auto;
+}
+
+.margin55 {
+	width: 55%;
+	margin: 0 auto;
+}
+
+
+.margin90 {
+	margin: 0 auto;
+	width: 80%;
+}
+.fieldSet4 {
+	width: 100%;
+	border: none;
+}
+.input-right {
+	display: inline-block;
+	text-align: right;
+	width: 50%;
+}
+.label-left {
+	display: inline-block;
+	text-align: left;
+	width: 50%;
+}
+.submit-middle {
+	margin: 0 auto;
+	width: 30%;
+}
+div.settings {
+	width: 40%;
+	display: inline-flex;
+	flex-flow: column wrap;
+	justify-content: flex-start;
+	flex-wrap: wrap;
+	padding-bottom: 5px;
+}
+div.settings0 {
+	width: 59%;
+	display: inline-flex;
+	flex-flow: column wrap;
+	justify-content: flex-start;
+	flex-wrap: wrap;
+	padding-bottom: 5px;
+}
+div.settings50 {
+	width: 45%;
+	display: inline-flex;
+	flex-flow: column wrap;
+	justify-content: flex-start;
+	flex-wrap: wrap;
+	padding-bottom: 5px;
+}
+div.settings10 {
+	width: 20%;
+	display: inline-flex;
+	flex-flow: column wrap;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+div.settings1 {
+	width: 6%;
+	display: inline-flex;
+	flex-flow: column wrap;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	margin: 2;
+}
+div.settings2 {
+	width: 89%;
+	display: inline-flex;
+	flex-flow: column wrap;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	margin: 2;
+}
+div.settings3 {
+	width: 10%;
+	display: inline-flex;
+	flex-flow: column wrap;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	margin: 2;
+}
+
+div.settings4 {
+	width: 80%;
+	display: inline-flex;
+	flex-flow: column wrap;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	margin: 2;
+}
+div.settings5 {
+	width: 30%;
+	display: inline-flex;
+	flex-flow: column wrap;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	margin: 2;
+}
+div.settings6 {
+	width: 65%;
+	display: inline-flex;
+	flex-flow: column wrap;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	margin: 2;
+}
+.margin28 {
+	width: 28;
+	margin: 0 auto;
+}
+.margin20 {
+	width: 20%;
+	margin: 0 auto;
+}
+.noBorder {
+	border: none;
+}
+.width100 {
+	width: 100%
+
+}
+
+.margin20 {
+	margin: 0 auto;
+	width: 20%;
+}
+
+.paddingTop5 {
+	padding-top: 5px;
+}
+
+
+
+
+
+.marginAuto {
+	margin: 0 auto;
+}
+#divSmallField {
+	width: 100%
+}
+
+/* fix when I know more not centered */
+.fieldset1 {
+	padding-left: 35%;
+	padding-right: 35%;
+	border: 0px solid;
+}
+.right-text-align {
+	text-align: right;
+}
+
+
+
+div.settings5 {
+	width: 30%;
+	display: inline-flex;
+	flex-flow: column wrap;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	margin: 2;
+	padding-bottom: 5px;
+}
+div.settings6 {
+	width: 65%;
+	display: inline-flex;
+	flex-flow: column wrap;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	margin: 2;
+	padding-bottom: 5px;
+}
+
+.margin25 {
+	width: 25%;
+	margin: 0 auto;
+}
+.submit-middle {
+	margin: 0 auto;
+	width: 20%;
+}
+
+
+p>a {
+	color: black;
+}
+
+
+.headings {
+
+	text-align: center;
+}
+.letters {
+	text-align: center;
+}
+
+
+
+
+
+.marginAuto {
+	margin: 0 auto;
+}
+div.settings10 {
+	width: 20%;
+	display: inline-flex;
+	flex-flow: wrap;
+	justify-content: center;
+	flex-wrap: wrap;
+}
+
+
+
+
+
+.copyright {
+	z-index: 9;
+	position: fixed;
+	bottom: 0;
+	text-align: right;
+	width: 80%;
+	margin: 0 auto;
+}
+
+
+
+
+
+
+
+#quesitonnaire {
+	margin: 0 auto; border: none; text-align: center;
+}
+
+
+.marginAuto {
+	margin: 0 auto;
+}
+
+
+
+
+
+#subjectVideo {
+	width: 70%;
+	margin: 0 auto;
+}
+
+
+
+
+
+.apendix {
+	position:relative;
+	width: 80%;
+}
+.white {
+	color: black;
+}
+
+div.settings10 {
+	min-width: 200px;
+	width: 20%;
+	display: inline-flex;
+	flex-flow: column wrap;
+	justify-content: flex-start;
+	flex-wrap: wrap;
+
+}
+
+
+.fieldset01 {
+	border: 0px solid;
+	width: 80%;
+	margin: 0 auto;
+
+}
+
+.submit-middle {
+	margin: 0 auto;
+	width: 20%;
+}
+div.settings9 {
+	width: 80%;
+	display: inline-flex;
+	flex-flow: column wrap;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	padding-bottom: 5px;
+}
+#mainMenuButton {
+	border: none;
+	width: 41px;
+	height: 41px;
+	},
+	#mainMenuImage {
+		width: 40px;
+		height: 40px;
+		},
+		body {
+			display: none;
+			background-colour: blue;
+		}
+
+		#selectSubject {
+			width: 100;
+		}
+		#content {
+			height: 100%;
+			width: 100%;
+			display: flex;
+			overflow: auto;
+		}
+		.leftSideInner {
+			width: 70%;
+			height: auto;
+			display: flex;
+		}
+		.rightSideInner {
+			width: 30%;
+			height: auto;
+			display: flex;
+		}
