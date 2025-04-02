@@ -8,3 +8,6 @@ The library is functional providing php is set up correctly. The facilities to e
 The javascript in relation to uploading video and audio content is in need of improvement at best. The functionallity to display revolving multiple choice questions has been removed as it had too many bugs, you will have to figure that out on your own. The set up style page also has bugs but can be fixed to change the style of the entire site. The css is ok in some parts but not great in others. The database may or may not need to be improved to enable uploads of content in relation to video and audio. Should be easy to decifer from the classes and sql statements. The subject information page is in need of improvement but would show videos and audio as well as apendixes if uploaded.
 ## Why do this
 Just thought it would be shame to waste something I spent so much time on. Feel free, have at it.
+
+Dependencies
+JQuery
